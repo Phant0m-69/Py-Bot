@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -10,4 +11,4 @@ async def on_message(message):
     if message.content.startswith("hi"):
         await message.channel.send("Hi! I am Py-Bot")
 
-client.run('NzY2MjAyMjQwMTEyNjU2Mzk1.X4f7cQ.qD0jVXcomKklqFidkY1JKDBRZp0')
+client.run(os.environ['TOKEN'])
