@@ -15,7 +15,7 @@ async def on_message(message):
 client.run(os.environ['TOKEN'])
 
 #anti-profanity filter
-var profanities = require('profanities',)
+var profanities = require('profanities')
 
 //profanity
 for(x in profanities)
