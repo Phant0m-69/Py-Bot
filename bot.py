@@ -19,7 +19,8 @@ var profanities = require('profanities',)
 
 //profanity
 for(x in profanities)
-  if(message.content.toUpperCase() == profanities(x).toUpperCase())
-     message.channel.send("Hey, Don't say that!")
-     message.delete()
-     return;
+  if(message.content.toUpperCase().includes(profanities[x].toUpperCase()))
+      message.channel.send('Hey! Don\'t Say that word');
+      message.delete();
+      return;
+    
