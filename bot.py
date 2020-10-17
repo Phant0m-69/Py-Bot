@@ -1,6 +1,6 @@
 import discord
 import os
-npm i profanities
+git+https://github.com/words/profanities
 
 client = discord.Client()
 
